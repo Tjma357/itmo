@@ -1,0 +1,36 @@
+body {
+	background: url(../images/bg.jpg) left top no-repeat no-repeat #000000;
+	padding: 1% 5%;
+	margin: 0;
+}
+
+a {
+	color: #FF0000;
+}
+
+a:visited {
+	color: #C00000;
+}
+
+div.block0 {
+	width: 100%;
+	min-height: calc(100% - 80px);
+	background: #FFFFFF;
+	color: #000000;
+	
+}
+
+div.block1 {
+	width: calc(100% - 100px);
+	height: 40px;
+	background: #D0D0D0;
+	color: #000000;
+	padding: 0px 50px;
+}
+
+div.block2 {
+	width: calc(100% - 40px);
+	background: #F0F0F0;
+	color: #000000;
+	padding: 5px 20px;
+}

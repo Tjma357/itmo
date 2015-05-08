@@ -23,6 +23,42 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>Dz2_2</servlet-name>
+		<servlet-class>com.dz2.Dz2_2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dz2_2</servlet-name>
+		<url-pattern>/dz2_2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Dz2_3</servlet-name>
+		<servlet-class>com.dz2.Dz2_3Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dz2_3</servlet-name>
+		<url-pattern>/dz2_3</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Dz2_4</servlet-name>
+		<servlet-class>com.dz2.Dz2_4Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dz2_4</servlet-name>
+		<url-pattern>/dz2_4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Dz2a_1</servlet-name>
+		<servlet-class>com.dz2a.Dz2a_1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dz2a_1</servlet-name>
+		<url-pattern>/dz2a_1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>Dz3_1</servlet-name>
 		<servlet-class>com.dz3.Dz3_1Servlet</servlet-class>
 	</servlet>

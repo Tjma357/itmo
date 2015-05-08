@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Dz2a</title>
+<link rel="stylesheet" href="../../css/myCSS.css">
+</head>
+
+<script src="../../jquery-2.1.3.min.js"></script>
+
+<script>
+	$(function() {
+		$('#b1').click(function() {
+			var var1 = $('#var1').val();
+			$('#q1').load("/dz2a_1?var1=" + var1);
+		});
+	});
+</script>
+
+<body>
+	<div class="block1">
+		<h2 ALIGN="center">Доп ДЗ по массивам</h2>
+	</div>
+	<div class="block0">
+		<br>
+		<div class="block2">
+			<table WIDTH="100%">
+				<tr>
+					<th COLSPAN="2">Задания:</th>
+				</tr>
+				<tr>
+					<td WIDTH="50%">Создать рандомный двумерный массив 6 на 6 и с
+						ним произвести действия</td>
+				</tr>
+				<tr>
+					<td>1. Отсортировать двумерный массив.</td>
+					<td>2. Вывести одномерный массив в обратном порядке.</td>
+				</tr>
+				<tr>
+					<td>3. Вывести двумерный массив.</td>
+					<td>4. Поиск в одномерном массиве первого вхождения числа "2"
+						и вывод его номера в массиве.</td>
+				</tr>
+				<tr>
+					<td>5. Вывод всех четных элементов из одномерного массива.</td>
+					<td>6. Найти максимальноое и менимальное числа в одномерном
+						массиве.
+					<td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div class="block2">
+			<b>
+				<p>Выберете задание из списка:</p>
+			</b> <input id="var1" type="text">
+			<button id="b1">Ответ</button>
+			<br> <span id="q1"></span>
+		</div>
+	</div>
+	<div class="block1">
+		<table WIDTH="100%" HEIGHT="100%">
+			<tr>
+				<td ALIGN="left"><a HREF="../../index.html"><<Назад)</a></td>
+				<td ALIGN="right"><a HREF="../../index.html"><<Вначало)</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
