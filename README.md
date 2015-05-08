@@ -1,4 +1,4 @@
 # itmo
-Хан Тимур Олегович
-группа 3157
+Хан Тимур Олегович<br>
+группа 3157<br>
 javatraining-tjma357.appspot.com/index.html
