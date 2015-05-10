@@ -1,10 +1,155 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Dz1</title>
+<link rel="stylesheet" href="../../css/myCSS.css">
+<style>
+#canvas {
+	min-height: 350px;
+	width: calc(90% -40px);
+	height: calc(100% - 208px);
+	background: url(border.jpg);
+	margin: 5px 5%;
+	padding: 10px 20px;
+}
+
+#map-canvas {
+	height: 100%;
+}
+</style>
+</head>
+
+<script src="../../jquery-2.1.3.min.js"></script>
+
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<script>
+	var mystyle = [ {
+		"featureType" : "road",
+		"stylers" : [ {
+			"hue" : "#FF8000"
+		}, {
+			"gamma" : 0.5
+		} ]
+	}, {
+		"featureType" : "road",
+		"elementType" : "labels",
+		"stylers" : [ {
+			"visibility" : "off"
+		} ]
+	}, {
+		"featureType" : "poi",
+		"elementType" : "all",
+		"stylers" : [ {
+			"hue" : "#F4ECB4"
+		}, {
+			"gamma" : 0.5
+		} ]
+	}, {
+		"featureType" : "landscape",
+		"elementType" : "all",
+		"stylers" : [ {
+			"saturation" : 1
+		}, {
+			"gamma" : 0.5
+		} ]
+	},{
+		"featureType" : "landscape",
+		"elementType" : "all",
+		"stylers" : [ {
+			"hue" : "#F4ECB4"
+		}]
+	}, {
+		"featureType" : "water",
+		"elementType" : "all",
+		"stylers" : [ {
+			"color" : "#0080FF"
+		}, {
+			"gamma" : 0.5
+		} ]
+	} ]
+	function initialize() {
+		var myLatlng0 = new google.maps.LatLng(37.260797, -41, 425128);
+		var myLatlng1 = new google.maps.LatLng(37.389092, -5.984459);
+		var myLatlng2 = new google.maps.LatLng(13.113222, -59.598809);
+		var myLatlng3 = new google.maps.LatLng(18.533333, -72.333333);
+		var myLatlng4 = new google.maps.LatLng(23.159167, -82.271056);
+		var myLatlng5 = new google.maps.LatLng(40.712784, -74.005941);
+		var myLatlng6 = new google.maps.LatLng(42.360083, -71.05888);
+		var myLatlng7 = new google.maps.LatLng(53.408371, -2.99157);
+		var myLatlng8 = new google.maps.LatLng(44.837789, -0.57918);
+		var mapOptions = {
+			zoom : 3,
+			center : myLatlng0,
+			styles : mystyle
+		};
+		map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+		var contentString1 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Севилья</h1><div id="bodyContent"><p><b>Севилья</b> - город на юге Испании с населением 700 тысяч жителей. Является столицей автономного сообщества Андалусия и провинции Севилья.</p></div></div>';
+		var contentString2 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Бриджтаун</h1><div id="bodyContent"><p><b>Бриджтаун</b> - столица независимого государства Барбадос, входящего в состав Британского содружества. Дословно название столицы переводится «город-мост».</p></div></div>';
+		var contentString3 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Порт-о-Пренс</h1><div id="bodyContent"><p><b>Порт-о-Пренс</b> - столица и главный внешнеторговый порт Гаити на западе острова на южном берегу залива Гонаив Карибского моря.</p></div></div>';
+		var contentString4 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Гаванна</h1><div id="bodyContent"><p><b>Гаванна</b> - столица Республики Куба, политический, экономический и культурный центр страны, административный центр провинции Гавана. Площадь большой Гаваны составляет 726,75 км², город поделён на 15 муниципалитетов.</p></div></div>';
+		var contentString5 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Нью-Йорк</h1><div id="bodyContent"><p><b>Нью-Йорк</b> -  крупнейший город США, входящий в одну из крупнейших агломераций мира.Население города составляет 8 405 837 человек, агломерации — 23,9 млн (по данным на 2013 год).</p></div></div>';
+		var contentString6 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Бостон</h1><div id="bodyContent"><p><b>Бостон</b> - столица и крупнейший город штата Массачусетс в США. Бостон также является крупнейшим городом региона, известного под названием Новая Англия, а также одним из старейших и богатейших городов США.</p></div></div>';
+		var contentString7 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Ливерпуль</h1><div id="bodyContent"><p><b>Ливерпуль</b> - город в Великобритании, в графстве Мерсисайд, порт на северо-западном побережье Англии, в устье реки Мерси.</p></div></div>';
+		var contentString8 = '<div id="content"><h1 id="firstHeading" class="firstHeading">Бордо</h1><div id="bodyContent"><p><b>Бордо</b> -  город на юго-западе Франции, центр исторической области Аквитания и современного департамента Жиронда. Расположен на берегах Гаронны, известных своими традициями и успехами в области виноделия. Население насчитывает ок. 285 тыс. чел. (2008).</p></div></div>';
+		var infowindow = new google.maps.InfoWindow({
+			content : contentString1
+		});
+		createMarker(myLatlng1, contentString1, 'Sevillla');
+		createMarker(myLatlng2, contentString2, 'Bridgetown');
+		createMarker(myLatlng3, contentString3, 'Port-au-Prince');
+		createMarker(myLatlng4, contentString4, 'Havana');
+		createMarker(myLatlng5, contentString5, 'New York');
+		createMarker(myLatlng6, contentString6, 'Boston');
+		createMarker(myLatlng7, contentString7, 'Liverpool');
+		createMarker(myLatlng8, contentString8, 'Bordeaux');
+	}
+
+	function createMarker(myLatlng, contentString, mytitle) {
+		var marker = new google.maps.Marker({
+			position : myLatlng,
+			map : map,
+			title : mytitle,
+			icon : 'pin.png'
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content : contentString
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map, marker);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 </head>
 <body>
-
+	<div class="block1">
+		<h1 ALIGN="center">Задание 1</h1>
+	</div>
+	<div class="block0">
+		<br>
+		<div class="block2" HEIHT="50px">
+			<b>Задание:</b>Сделать Гугл карту с использованием в качестве
+			оформления стилей CSS, создать свой фирменный стиль оформления карты
+			(не может дублироваться у других студентов)<br>
+		</div>
+		<br>
+		<div class="block2">
+			<div id="canvas">
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+	</div>
+	<div class="block1">
+		<table WIDTH="100%" HEIGHT="100%">
+			<tr>
+				<td ALIGN="left"><a HREF="z2.html"><<Назад)</a></td>
+				<td ALIGN="right"><a HREF="../../index.html"><<Вначало)</a></td>
+			</tr>
+		</table>
+	</div>
 </body>
-</html>

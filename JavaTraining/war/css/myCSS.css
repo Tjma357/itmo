@@ -13,6 +13,7 @@ a:visited {
 }
 
 div.block0 {
+	min-width: 500px;
 	width: 100%;
 	min-height: calc(100% - 80px);
 	background: #FFFFFF;
@@ -21,6 +22,7 @@ div.block0 {
 }
 
 div.block1 {
+	min-width: 400px;
 	width: calc(100% - 100px);
 	height: 40px;
 	background: #D0D0D0;
@@ -29,6 +31,7 @@ div.block1 {
 }
 
 div.block2 {
+	min-width: 400px;
 	width: calc(100% - 40px);
 	background: #F0F0F0;
 	color: #000000;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns="http://java.sun.com/xml/ns/javaee"
-xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
 	<servlet>
 		<servlet-name>JavaTraining</servlet-name>
 		<servlet-class>com.JavaTrainingServlet</servlet-class>
@@ -12,7 +12,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>JavaTraining</servlet-name>
 		<url-pattern>/javatraining</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz2_1</servlet-name>
 		<servlet-class>com.dz2.Dz2_1Servlet</servlet-class>
@@ -21,7 +21,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz2_1</servlet-name>
 		<url-pattern>/dz2_1</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz2_2</servlet-name>
 		<servlet-class>com.dz2.Dz2_2Servlet</servlet-class>
@@ -30,7 +30,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz2_2</servlet-name>
 		<url-pattern>/dz2_2</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz2_3</servlet-name>
 		<servlet-class>com.dz2.Dz2_3Servlet</servlet-class>
@@ -39,7 +39,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz2_3</servlet-name>
 		<url-pattern>/dz2_3</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz2_4</servlet-name>
 		<servlet-class>com.dz2.Dz2_4Servlet</servlet-class>
@@ -48,7 +48,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz2_4</servlet-name>
 		<url-pattern>/dz2_4</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz2a_1</servlet-name>
 		<servlet-class>com.dz2a.Dz2a_1Servlet</servlet-class>
@@ -57,7 +57,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz2a_1</servlet-name>
 		<url-pattern>/dz2a_1</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz3_1</servlet-name>
 		<servlet-class>com.dz3.Dz3_1Servlet</servlet-class>
@@ -66,7 +66,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz3_1</servlet-name>
 		<url-pattern>/dz3_1</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Dz3_2</servlet-name>
 		<servlet-class>com.dz3.Dz3_2Servlet</servlet-class>
@@ -75,7 +75,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Dz3_2</servlet-name>
 		<url-pattern>/dz3_2</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>Dz3a_1</servlet-name>
+		<servlet-class>com.dz3a.Dz3a_1Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dz3a_1</servlet-name>
+		<url-pattern>/dz3a_1</url-pattern>
+	</servlet-mapping>
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>

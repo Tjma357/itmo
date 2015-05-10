@@ -35,6 +35,12 @@ public class JavaTrainingServlet extends HttpServlet {
 							"<b>Суть задания:</b><br>Вывод таблицы Unicode в заданном промежутке значений.<form action="
 									+ "\"html/z3/z3.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
 			break;
+		case "3a":
+			resp.getWriter()
+					.println(
+							"<b>Суть задания:</b><br>Вывод таблицы цветов в заданном промежутке значений.<form action="
+									+ "\"html/z3a/z3a.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+			break;
 		case "4":
 			resp.getWriter()
 					.println(

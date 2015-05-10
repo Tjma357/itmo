@@ -16,10 +16,10 @@ public class Dz3_2Servlet extends HttpServlet {
 			min = Integer.parseInt(var1);
 			max = Integer.parseInt(var2);
 		} catch (NumberFormatException e) {
-			resp.getWriter().println("Данные введены неверно!");
 			k = 0;
 		}
-		if (k == 1) {
+		if ((k == 1) && (min >= 0) && (min <= 65535) && (max >= 0)
+				&& (max <= 65535)) {
 			if (min > max) {
 				k = min;
 				min = max;
@@ -38,7 +38,8 @@ public class Dz3_2Servlet extends HttpServlet {
 						"<th>&#" + i + " | " + i + " | " + IntHex(i) + "</th>");
 				sh++;
 			}
-		}
+		} else
+			resp.getWriter().println("Данные введены неверно!");
 	}
 
 	public String IntHex(int k) {
