@@ -59,12 +59,6 @@ public class JavaTrainingServlet extends HttpServlet {
 							"<b>Суть задания:</b><br>6. Задание с чтением файла и преобразованием в CSV.<form action=\""
 									+ "html/z6/z6.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
 			break;
-		case "7":
-			resp.getWriter()
-					.println(
-							"<b>Суть задания:</b><br>Индивидуальное финальное задание.<form action=\"html/z7/z7.html"
-									+ "\"><input type=\"submit\" value=\"Перейти>>\"></form>");
-			break;
 		}
 	}
 }

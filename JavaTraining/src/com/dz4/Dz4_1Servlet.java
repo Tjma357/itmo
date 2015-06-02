@@ -1,9 +1,7 @@
 package com.dz4;
 
 import java.io.IOException;
-
 import javax.servlet.http.*;
-
 import com.dz4.ship.ShipS;
 import com.dz4.city.City;
 
