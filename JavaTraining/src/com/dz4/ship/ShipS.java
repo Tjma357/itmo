@@ -6,22 +6,22 @@ public class ShipS {
 	public void setShip() {
 		for (int i = 0; i < 4; i++)
 			shi[i] = new Ship();
-		shi[0].settype("Øõóíà");
+		shi[0].settype("Ð¨Ñ…ÑƒÐ½Ð°");
 		shi[0].setgold(4000);
 		shi[0].setspeed(138);
 		shi[0].setmaxves(50);
 		shi[0].setpeople(16);
-		shi[1].settype("Îñò-Èíäèéñêèé òîðãîâåö");
+		shi[1].settype("ÐžÑÑ‚-Ð˜Ð½Ð´Ð¸Ð¹ÑÐºÐ¸Ð¹ Ñ‚Ð¾Ñ€Ð³Ð¾Ð²ÐµÑ†");
 		shi[1].setgold(13670);
 		shi[1].setspeed(60);
 		shi[1].setmaxves(200);
 		shi[1].setpeople(70);
-		shi[2].settype("Áðèã");
+		shi[2].settype("Ð‘Ñ€Ð¸Ð³");
 		shi[2].setgold(15800);
 		shi[2].setspeed(175);
 		shi[2].setmaxves(70);
 		shi[2].setpeople(110);
-		shi[3].settype("Ôðåãàò");
+		shi[3].settype("Ð¤Ñ€ÐµÐ³Ð°Ñ‚");
 		shi[3].setgold(24650);
 		shi[3].setspeed(120);
 		shi[3].setmaxves(130);

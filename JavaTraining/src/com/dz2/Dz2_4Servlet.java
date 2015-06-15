@@ -24,6 +24,6 @@ public class Dz2_4Servlet extends HttpServlet {
 			}
 			resp.getWriter().println("<br>");
 		}
-		resp.getWriter().println("<br>Максимальное число:" + max);
+		resp.getWriter().println("<br>РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ:" + max);
 	}
 }

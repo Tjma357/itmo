@@ -39,7 +39,7 @@ public class Dz3_2Servlet extends HttpServlet {
 				sh++;
 			}
 		} else
-			resp.getWriter().println("Данные введены неверно!");
+			resp.getWriter().println("Р”Р°РЅРЅС‹Рµ РІРІРµРґРµРЅС‹ РЅРµРІРµСЂРЅРѕ!");
 	}
 
 	public String IntHex(int k) {

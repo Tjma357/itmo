@@ -39,6 +39,6 @@ public class Dz3_1Servlet extends HttpServlet {
 				sh++;
 			}
 		} else
-			resp.getWriter().println("Данные введены неверно!");
+			resp.getWriter().println("Р”Р°РЅРЅС‹Рµ РІРІРµРґРµРЅС‹ РЅРµРІРµСЂРЅРѕ!");
 	}
 }

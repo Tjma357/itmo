@@ -19,14 +19,14 @@ public class Dz2_2Servlet extends HttpServlet {
 		int d = b * b - 4 * a * c;
 		resp.getWriter().println("<br>");
 		if (d < 0) {
-			resp.getWriter().println("Корней нет");
+			resp.getWriter().println("РљРѕСЂРЅРµР№ РЅРµС‚");
 		} else if (d == 0) {
 			x1 = -b / (2 * a);
-			resp.getWriter().println("1 корень:<br>" + x1);
+			resp.getWriter().println("1 РєРѕСЂРµРЅСЊ:<br>" + x1);
 		} else {
 			x1 = (-b - Math.sqrt(d)) / (2 * a);
 			x2 = (-b + Math.sqrt(d)) / (2 * a);
-			resp.getWriter().println("2 корня:<br>" + x1 + " и " + x2);
+			resp.getWriter().println("2 РєРѕСЂРЅСЏ:<br>" + x1 + " Рё " + x2);
 		}
 	}
 }

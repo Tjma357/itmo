@@ -28,7 +28,7 @@ public class Dz3a_1Servlet extends HttpServlet {
 		}
 
 		if ((t == 0) || (sh < 1) || (min < 0x0) || (max > 0xFFFFFF)) {
-			resp.getWriter().println("Данные введены неверно!");
+			resp.getWriter().println("Р”Р°РЅРЅС‹Рµ РІРІРµРґРµРЅС‹ РЅРµРІРµСЂРЅРѕ!");
 		} else {
 			resp.getWriter().println("<br><table width=\"100%\"><tr>");
 			if (sh > 1) {

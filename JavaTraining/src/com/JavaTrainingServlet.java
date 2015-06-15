@@ -14,50 +14,50 @@ public class JavaTrainingServlet extends HttpServlet {
 		case "1":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Создать Гугл карту по Лекции 1 со своим форматированием.<form "
-									+ "action=\"html/z1/z1.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>РЎРѕР·РґР°С‚СЊ Р“СѓРіР» РєР°СЂС‚Сѓ РїРѕ Р›РµРєС†РёРё 1 СЃРѕ СЃРІРѕРёРј С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµРј.<form "
+									+ "action=\"html/z1/z1.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "2":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Изучив пример выполнить задания по массивам, циклам, типам данных."
-									+ "<form action=\"html/z2/z2.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>РР·СѓС‡РёРІ РїСЂРёРјРµСЂ РІС‹РїРѕР»РЅРёС‚СЊ Р·Р°РґР°РЅРёСЏ РїРѕ РјР°СЃСЃРёРІР°Рј, С†РёРєР»Р°Рј, С‚РёРїР°Рј РґР°РЅРЅС‹С…."
+									+ "<form action=\"html/z2/z2.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "2a":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Дополнительное домашнее задание по массивам.<form action="
-									+ "\"html/z2a/z2a.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РґРѕРјР°С€РЅРµРµ Р·Р°РґР°РЅРёРµ РїРѕ РјР°СЃСЃРёРІР°Рј.<form action="
+									+ "\"html/z2a/z2a.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "3":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Вывод таблицы Unicode в заданном промежутке значений.<form action="
-									+ "\"html/z3/z3.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>Р’С‹РІРѕРґ С‚Р°Р±Р»РёС†С‹ Unicode РІ Р·Р°РґР°РЅРЅРѕРј РїСЂРѕРјРµР¶СѓС‚РєРµ Р·РЅР°С‡РµРЅРёР№.<form action="
+									+ "\"html/z3/z3.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "3a":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Вывод таблицы цветов в заданном промежутке значений.<form action="
-									+ "\"html/z3a/z3a.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>Р’С‹РІРѕРґ С‚Р°Р±Р»РёС†С‹ С†РІРµС‚РѕРІ РІ Р·Р°РґР°РЅРЅРѕРј РїСЂРѕРјРµР¶СѓС‚РєРµ Р·РЅР°С‡РµРЅРёР№.<form action="
+									+ "\"html/z3a/z3a.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "4":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>Организовать систему основанную на классах.<form action=\"html/z4/"
-									+ "z4.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>РћСЂРіР°РЅРёР·РѕРІР°С‚СЊ СЃРёСЃС‚РµРјСѓ РѕСЃРЅРѕРІР°РЅРЅСѓСЋ РЅР° РєР»Р°СЃСЃР°С….<form action=\"html/z4/"
+									+ "z4.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "5":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>5. Задание с исключениями.<form action=\"html/z5/z5.html\"><input"
-									+ " type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>5. Р—Р°РґР°РЅРёРµ СЃ РёСЃРєР»СЋС‡РµРЅРёСЏРјРё.<form action=\"html/z5/z5.html\"><input"
+									+ " type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		case "6":
 			resp.getWriter()
 					.println(
-							"<b>Суть задания:</b><br>6. Задание с чтением файла и преобразованием в CSV.<form action=\""
-									+ "html/z6/z6.html\"><input type=\"submit\" value=\"Перейти>>\"></form>");
+							"<b>РЎСѓС‚СЊ Р·Р°РґР°РЅРёСЏ:</b><br>6. Р—Р°РґР°РЅРёРµ СЃ С‡С‚РµРЅРёРµРј С„Р°Р№Р»Р° Рё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµРј РІ CSV.<form action=\""
+									+ "html/z6/z6.html\"><input type=\"submit\" value=\"РџРµСЂРµР№С‚Рё>>\"></form>");
 			break;
 		}
 	}

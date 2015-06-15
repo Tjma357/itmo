@@ -26,7 +26,7 @@ public class Dz5_1Servlet extends HttpServlet {
 									+ "<input id='num1' type='hidden' value='"
 									+ (k+1)
 									+ "'><br><input id='in1' type='text'>"
-									+ "<button id='b2'>Проверить</button><br>"
+									+ "<button id='b2'>РџСЂРѕРІРµСЂРёС‚СЊ</button><br>"
 									+ "<span id='out2'></span>"
 									+ "<script> $('#b2').click(function() {"
 									+ "var var2 = $('#in1').val(); "
@@ -43,19 +43,18 @@ public class Dz5_1Servlet extends HttpServlet {
 				resp.getWriter().println(e.getMessage());
 			}
 			catch(ParseException e) {
-				resp.getWriter().println("Ошибка при вводе формата даты!");
+				resp.getWriter().println("РћС€РёР±РєР° РїСЂРё РІРІРѕРґРµ С„РѕСЂРјР°С‚Р° РґР°С‚С‹!");
 			}
 			catch(NumberFormatException e) {
-				resp.getWriter().println("Ошибка при вводе числа!");
+				resp.getWriter().println("РћС€РёР±РєР° РїСЂРё РІРІРѕРґРµ С‡РёСЃР»Р°!");
 			}
-			resp.getWriter().println();
 		}
 	}
 	
 	public static void checkAnsw(Questions q, String in1, int k, HttpServletResponse resp) throws MyException, ParseException, NumberFormatException {
 		if (q.checkStr(in1, k)) {
-			throw new MyException("Правильно!");
+			throw new MyException("РџСЂР°РІРёР»СЊРЅРѕ!");
 		} else
-			throw new MyException("Неверно!");
+			throw new MyException("РќРµРІРµСЂРЅРѕ!");
 	}
 }

@@ -10,15 +10,15 @@ public class Questions {
 
 	public Questions(int k) {
 		if (k==1) {
-			this.quest = "Как зовут Сережу?";
-			this.answer = "Сережа";
+			this.quest = "РљР°Рє Р·РѕРІСѓС‚ РЎРµСЂРµР¶Сѓ?";
+			this.answer = "РЎРµСЂРµР¶Р°";
 		}
 		if (k==2) {
-			this.quest = "Когда день рождение у Тани?";
+			this.quest = "РљРѕРіРґР° РґРµРЅСЊ СЂРѕР¶РґРµРЅРёРµ Сѓ РўР°РЅРё?";
 			this.answer = "06.06.1994";
 		}
 		if (k==3) {
-			this.quest = "Сколько у Славы глаз?";
+			this.quest = "РЎРєРѕР»СЊРєРѕ Сѓ РЎР»Р°РІС‹ РіР»Р°Р·?";
 			this.answer = "3";
 		}
 	}

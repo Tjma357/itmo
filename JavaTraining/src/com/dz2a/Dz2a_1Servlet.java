@@ -19,9 +19,9 @@ public class Dz2a_1Servlet extends HttpServlet {
 			}
 		}
 		switch (ik) {
-		case 0: // сортировка
+		case 0: // СЃРѕСЂС‚РёСЂРѕРІРєР°
 		{
-			resp.getWriter().println("<br>До: ");
+			resp.getWriter().println("<br>Р”Рѕ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 			}
@@ -38,25 +38,25 @@ public class Dz2a_1Servlet extends HttpServlet {
 					}
 				}
 			}
-			resp.getWriter().println("<br>После: ");
+			resp.getWriter().println("<br>РџРѕСЃР»Рµ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 			}
 			break;
 		}
-		case 1: // массив в обратном порядке
+		case 1: // РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ
 		{
-			resp.getWriter().println("<br>До: ");
+			resp.getWriter().println("<br>Р”Рѕ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 			}
-			resp.getWriter().println("<br>После: ");
+			resp.getWriter().println("<br>РџРѕСЃР»Рµ: ");
 			for (int j = m[ik].length - 1; j >= 0; j--) {
 				resp.getWriter().println(m[ik][j] + " ");
 			}
 			break;
 		}
-		case 2: // двумерный массив
+		case 2: // РґРІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ
 		{
 			for (int i = 0; i < m.length; i++) {
 				for (int j = 0; j < m[i].length; j++) {
@@ -66,11 +66,11 @@ public class Dz2a_1Servlet extends HttpServlet {
 			}
 			break;
 		}
-		case 3: // найти в массиве число и вывести на каком оно месте
+		case 3: // РЅР°Р№С‚Рё РІ РјР°СЃСЃРёРІРµ С‡РёСЃР»Рѕ Рё РІС‹РІРµСЃС‚Рё РЅР° РєР°РєРѕРј РѕРЅРѕ РјРµСЃС‚Рµ
 		{
 			boolean f = false;
 			int k = 2, s = -2;
-			resp.getWriter().println("<br>Массив: ");
+			resp.getWriter().println("<br>РњР°СЃСЃРёРІ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 				if ((m[ik][j] == k) & (!f)) {
@@ -79,28 +79,28 @@ public class Dz2a_1Servlet extends HttpServlet {
 				}
 			}
 			if (s == -2) {
-				resp.getWriter().println("<br>Не найдено.");
+				resp.getWriter().println("<br>РќРµ РЅР°Р№РґРµРЅРѕ.");
 			} else
-				resp.getWriter().println("<br>На " + (s + 1) + " месте.");
+				resp.getWriter().println("<br>РќР° " + (s + 1) + " РјРµСЃС‚Рµ.");
 			break;
 		}
-		case 4: // элементы которые делятся на 2
+		case 4: // СЌР»РµРјРµРЅС‚С‹ РєРѕС‚РѕСЂС‹Рµ РґРµР»СЏС‚СЃСЏ РЅР° 2
 		{
-			resp.getWriter().println("<br>Массив: ");
+			resp.getWriter().println("<br>РњР°СЃСЃРёРІ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 			}
-			resp.getWriter().println("<br>Элементы: ");
+			resp.getWriter().println("<br>Р­Р»РµРјРµРЅС‚С‹: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				if (m[ik][j] % 2 == 0)
 					resp.getWriter().println(m[ik][j] + " ");
 			}
 			break;
 		}
-		case 5: // макс и мин в массиве
+		case 5: // РјР°РєСЃ Рё РјРёРЅ РІ РјР°СЃСЃРёРІРµ
 		{
 			int max = 0, min = 20;
-			resp.getWriter().println("<br>Массив: ");
+			resp.getWriter().println("<br>РњР°СЃСЃРёРІ: ");
 			for (int j = 0; j < m[ik].length; j++) {
 				resp.getWriter().println(m[ik][j] + " ");
 				if (max < m[ik][j]) {
@@ -113,6 +113,5 @@ public class Dz2a_1Servlet extends HttpServlet {
 			break;
 		}
 		}
-
 	}
 }

@@ -17,7 +17,7 @@ public class Dz4_1Servlet extends HttpServlet {
 		if (var1.equals("new")) {
 			resp.getWriter()
 					.println(
-							"Из какого города начнем?<br> <select id=\"s1\">"
+							"РР· РєР°РєРѕРіРѕ РіРѕСЂРѕРґР° РЅР°С‡РЅРµРј?<br> <select id=\"s1\">"
 									+ cit.SelCity("9")
 									+ "</select> <script>$('#s1').change(function()"
 									+ "{var var2 = $('#s1').val();"
@@ -26,26 +26,26 @@ public class Dz4_1Servlet extends HttpServlet {
 			String ci1 = req.getParameter("var2");
 			resp.getWriter()
 					.println(
-							"<div id=\"out1\">Деньги: "
+							"<div id=\"out1\">Р”РµРЅСЊРіРё: "
 									+ shi.retGold(1)
-									+ " Экю"
+									+ " Р­РєСЋ"
 									+ "<input id=\"go1\" type=\"hidden\" value=\""
 									+ shi.retGold(1)
 									+ "\">"
-									+ "<br>Корабль: "
+									+ "<br>РљРѕСЂР°Р±Р»СЊ: "
 									+ shi.retType(1)
 									+ "<input id=\"sh1\" type=\"hidden\" value=\"1\">"
-									+ "<br>Место в трюме под товар: "
+									+ "<br>РњРµСЃС‚Рѕ РІ С‚СЂСЋРјРµ РїРѕРґ С‚РѕРІР°СЂ: "
 									+ shi.retMaxves(1)
-									+ "<br>Количество людей на корабле: "
+									+ "<br>РљРѕР»РёС‡РµСЃС‚РІРѕ Р»СЋРґРµР№ РЅР° РєРѕСЂР°Р±Р»Рµ: "
 									+ shi.retPeople(1)
-									+ "</div>Город: "
+									+ "</div>Р“РѕСЂРѕРґ: "
 									+ cit.RetCity(ci1)
-									+ "<br>Выберите куда отправиться:<br> <select id=\"s3\">"
-									+ "<option disabled selected>- Выбирете город -	</option>"
+									+ "<br>Р’С‹Р±РµСЂРёС‚Рµ РєСѓРґР° РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ:<br> <select id=\"s3\">"
+									+ "<option disabled selected>- Р’С‹Р±РёСЂРµС‚Рµ РіРѕСЂРѕРґ -	</option>"
 									+ cit.SelCity(ci1)
 									+ "</select>"
-									+ "<button id=\"b2\">Отправиться</button>"
+									+ "<button id=\"b2\">РћС‚РїСЂР°РІРёС‚СЊСЃСЏ</button>"
 									+ "<input id=\"ci1\" type=\"hidden\" value=\""
 									+ ci1
 									+ "\">"
@@ -64,28 +64,28 @@ public class Dz4_1Servlet extends HttpServlet {
 			go1 = (int) (go1 + cit.Got(shi.retMaxves(sh1), shi.retPeople(sh1), shi.retSpeed(sh1), ci1, ci2));
 			resp.getWriter()
 					.println(
-							"<div id=\"out1\">Деньги: "
+							"<div id=\"out1\">Р”РµРЅСЊРіРё: "
 									+ go1
-									+ " Экю"
+									+ " Р­РєСЋ"
 									+ "<input id=\"go1\" type=\"hidden\" value=\""
 									+ go1
 									+ "\">"
-									+ "<br>Корабль: "
+									+ "<br>РљРѕСЂР°Р±Р»СЊ: "
 									+ shi.retType(sh1)
 									+ "<input id=\"sh1\" type=\"hidden\" value=\""
 									+ sh1
 									+ "\">"
-									+ "<br>Место в трюме под товар: "
+									+ "<br>РњРµСЃС‚Рѕ РІ С‚СЂСЋРјРµ РїРѕРґ С‚РѕРІР°СЂ: "
 									+ shi.retMaxves(sh1)
-									+ "<br>Количество людей на корабле: "
+									+ "<br>РљРѕР»РёС‡РµСЃС‚РІРѕ Р»СЋРґРµР№ РЅР° РєРѕСЂР°Р±Р»Рµ: "
 									+ shi.retPeople(sh1)
-									+ "</div>Город: "
+									+ "</div>Р“РѕСЂРѕРґ: "
 									+ cit.RetCity(ci2)
-									+ "<br>Выберите куда отправиться:<br> <select id=\"s3\">"
-									+ "<option disabled selected>- Выбирете город -	</option>"
+									+ "<br>Р’С‹Р±РµСЂРёС‚Рµ РєСѓРґР° РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ:<br> <select id=\"s3\">"
+									+ "<option disabled selected>- Р’С‹Р±РёСЂРµС‚Рµ РіРѕСЂРѕРґ -	</option>"
 									+ cit.SelCity(ci2)
 									+ "</select>"
-									+ "<button id=\"b2\">Отправиться</button>"
+									+ "<button id=\"b2\">РћС‚РїСЂР°РІРёС‚СЊСЃСЏ</button>"
 									+ "<input id=\"ci1\" type=\"hidden\" value=\""
 									+ ci2
 									+ "\">"
@@ -103,11 +103,11 @@ public class Dz4_1Servlet extends HttpServlet {
 			int sh2 = Integer.parseInt(req.getParameter("var5"));
 			int go2 = shi.buyShip(sh1, sh2);
 			if (go1 < go2)
-				resp.getWriter().println(" Недостаточно денег!");
+				resp.getWriter().println(" РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі!");
 			else
 				resp.getWriter()
 						.println(
-								"<button id = \"bb1\">Купить</button>"
+								"<button id = \"bb1\">РљСѓРїРёС‚СЊ</button>"
 										+ "<script>$('#bb1').click(function()"
 										+ "{var var2 = $('#ci1').val(); "
 										+ "var var3 = $('#go1').val(); "
@@ -123,13 +123,13 @@ public class Dz4_1Servlet extends HttpServlet {
 			int go2 = shi.buyShip(sh1, sh2);
 			go2 = go1 - go2;
 			resp.getWriter().println(
-					"Деньги: " + go2 + " Экю"
+					"Р”РµРЅСЊРіРё: " + go2 + " Р­РєСЋ"
 							+ "<input id=\"go1\" type=\"hidden\" value=\""
-							+ go2 + "\">" + "<br>Корабль: " + shi.retType(sh2)
+							+ go2 + "\">" + "<br>РљРѕСЂР°Р±Р»СЊ: " + shi.retType(sh2)
 							+ "<input id=\"sh1\" type=\"hidden\" value=\""
-							+ sh2 + "\">" + "<br>Место в трюме под товар: "
+							+ sh2 + "\">" + "<br>РњРµСЃС‚Рѕ РІ С‚СЂСЋРјРµ РїРѕРґ С‚РѕРІР°СЂ: "
 							+ shi.retMaxves(sh2)
-							+ "<br>Количество людей на корабле: "
+							+ "<br>РљРѕР»РёС‡РµСЃС‚РІРѕ Р»СЋРґРµР№ РЅР° РєРѕСЂР°Р±Р»Рµ: "
 							+ shi.retPeople(sh2));
 		}
 	}
